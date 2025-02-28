@@ -24,7 +24,7 @@
       }
     </style>
   </head>
-  <body class="bg-[#F4F7FF] pt-6 primary-font">
+  <body class="pt-6 primary-font">
     <header
       class="w-9/12 mx-auto bg-white rounded-2xl mb-6 border-gray-100 shadow-md"
     >
@@ -44,7 +44,7 @@
             <h3 class="text-3xl font-bold">23</h3>
           </div>
           <!-- bg color dib -->
-          <button class="p-3 rounded-full bg-[#F4F7FF]">
+          <button id="theme-btn" class="p-3 rounded-full bg-[#F4F7FF]">
             <img src="./assets/theme-btn.png" alt="" />
           </button>
         </div>
@@ -72,6 +72,7 @@
             </div>
             <!-- task card middle -->
             <div
+              id="Blogs"
               class="bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex items-center py-8 px-9 gap-3 rounded-xl flex-1"
             >
               <!-- image -->
@@ -93,9 +94,8 @@
                 <img class="w-6 h-6" src="./assets/calender.png" alt="" />
               </div>
               <!-- text -->
-              <div class="text-start">
-                <h3 class="text-[#00303C] font-medium text-2xl">Wed, </h3>
-                <h2 class="text-2xl font-bold">July 28 2025</h2>
+              <div class="text-center">
+                <h2 id="current-date" class="text-lg font-bold"></h2>
               </div>
             </div>
           </div>
@@ -318,5 +318,8 @@
         </div>
       </section>
     </main>
+    <!-- script -->
+    <script src="./script/date.js"></script>
+    <script src="./script/script.js"></script>
   </body>
 </html>
