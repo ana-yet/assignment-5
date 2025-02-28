@@ -16,7 +16,3 @@ document
     body.style.backgroundColor = color[colorIndex];
     document;
   });
-
-document.getElementById("Blogs").addEventListener("click", function (event) {
-  window.location.href = "../qna.html";
-});

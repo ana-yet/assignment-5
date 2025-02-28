@@ -38,6 +38,7 @@
         <div class="flex gap-9 items-center">
           <!-- bg color dib -->
           <button
+            id="qn-btn"
             class="py-3 px-4 rounded-lg bg-purple-600 text-white font-medium"
           >
             Back to Desk
@@ -114,5 +115,15 @@
         </div>
       </section>
     </main>
+    <!-- script -->
+    <script>
+      // qn
+      document
+        .getElementById("qn-btn")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          window.location.href = "../index.html";
+        });
+    </script>
   </body>
 </html>
