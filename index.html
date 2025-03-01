@@ -41,7 +41,7 @@
             class="flex bg-[#F4F7FF] px-4 py-3 rounded-full gap-2 items-center"
           >
             <img class="w-8 h-8" src="./assets/checkbox.png" alt="" />
-            <h3 class="text-3xl font-bold">23</h3>
+            <h3 id="Completed-task" class="text-3xl font-bold">23</h3>
           </div>
           <!-- bg color dib -->
           <button id="theme-btn" class="p-3 rounded-full bg-[#F4F7FF]">
@@ -110,7 +110,7 @@
                 >
                   ShopEase
                 </h4>
-                <h2 class="text-2xl font-medium mb-4">
+                <h2 class="text-2xl font-medium mb-4 card-title">
                   Fix Mobile Button Issue
                 </h2>
                 <p class="p-5 bg-white rounded-md text-gray-500">
@@ -127,7 +127,8 @@
                   <h4 class="text-xl font-medium">21 March 2025</h4>
                 </div>
                 <button
-                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium"
+                  id="btn-1"
+                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium complete-btn"
                 >
                   Completed
                 </button>
@@ -142,7 +143,9 @@
                 >
                   CloudSync
                 </h4>
-                <h2 class="text-2xl font-medium mb-4">Add Dark Mode</h2>
+                <h2 class="text-2xl font-medium mb-4 card-title">
+                  Add Dark Mode
+                </h2>
                 <p class="p-5 bg-white rounded-md text-gray-500">
                   Store the user's preference in localStorage, update CSS
                   variables dynamically, and apply a smooth transition effect.
@@ -156,7 +159,7 @@
                   <h4 class="text-xl font-medium">22 March 2025</h4>
                 </div>
                 <button
-                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium"
+                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium complete-btn"
                 >
                   Completed
                 </button>
@@ -171,7 +174,9 @@
                 >
                   SwiftPay
                 </h4>
-                <h2 class="text-2xl font-medium mb-4">Optimize Home page </h2>
+                <h2 class="text-2xl font-medium mb-4 card-title">
+                  Optimize Home page 
+                </h2>
                 <p class="p-5 bg-white rounded-md text-gray-500">
                   Debug using Chrome DevTools, check for overlapping elements,
                   and ensure onClick works properly and ensure onClick works
@@ -186,7 +191,7 @@
                   <h4 class="text-xl font-medium">23 March 2025</h4>
                 </div>
                 <button
-                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium"
+                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium complete-btn"
                 >
                   Completed
                 </button>
@@ -201,7 +206,9 @@
                 >
                   Meta
                 </h4>
-                <h2 class="text-2xl font-medium mb-4">Add new emoji 🤲</h2>
+                <h2 class="text-2xl font-medium mb-4 card-title">
+                  Add new emoji 🤲
+                </h2>
                 <p class="p-5 bg-white rounded-md text-gray-500">
                   Debug using Chrome DevTools, check for overlapping elements,
                   and ensure onClick works properly and ensure onClick works
@@ -216,7 +223,7 @@
                   <h4 class="text-xl font-medium">24 March 2025</h4>
                 </div>
                 <button
-                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium"
+                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium complete-btn"
                 >
                   Completed
                 </button>
@@ -231,7 +238,9 @@
                 >
                   Google LLC
                 </h4>
-                <h2 class="text-2xl font-medium mb-4">Integrate OpenAI API</h2>
+                <h2 class="text-2xl font-medium mb-4 card-title">
+                  Integrate OpenAI API
+                </h2>
                 <p class="p-5 bg-white rounded-md text-gray-500">
                   Debug using Chrome DevTools, check for overlapping elements,
                   and ensure onClick works properly and ensure onClick works
@@ -246,7 +255,7 @@
                   <h4 class="text-xl font-medium">25 March 2025</h4>
                 </div>
                 <button
-                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium"
+                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium complete-btn"
                 >
                   Completed
                 </button>
@@ -261,7 +270,9 @@
                 >
                   Glassdoar
                 </h4>
-                <h2 class="text-2xl font-medium mb-4">Improve Job searching</h2>
+                <h2 class="text-2xl font-medium mb-4 card-title">
+                  Improve Job searching
+                </h2>
                 <p class="p-5 bg-white rounded-md text-gray-500">
                   Debug using Chrome DevTools, check for overlapping elements,
                   and ensure onClick works properly and ensure onClick works
@@ -276,7 +287,7 @@
                   <h4 class="text-xl font-medium">26 March 2025</h4>
                 </div>
                 <button
-                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium"
+                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium complete-btn"
                 >
                   Completed
                 </button>
@@ -295,6 +306,7 @@
             </div>
             <div class="mt-4">
               <button
+                id="history-clear-btn"
                 class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium"
               >
                 Clear History
@@ -303,7 +315,13 @@
           </div>
           <hr class="border-gray-200" />
           <!-- history -->
-          <div></div>
+          <div id="history-content" class="p-4">
+            <div class="p-4 hidden bg-[#F4F7FF] rounded-3xl">
+              <p class="font-medium">
+                you have completed the task fixed mobile button at 4:00 am
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>

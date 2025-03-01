@@ -30,3 +30,10 @@ const date = today.getDate();
 const year = today.getFullYear();
 const finalDate = `${dayName} ${monthName} ${date} <br/> ${year}`;
 updateDate.innerHTML = finalDate;
+
+const todayTime = today.toLocaleTimeString(undefined, {
+  hour: "2-digit",
+  minute: "2-digit",
+  second: "2-digit",
+  hour12: true,
+});
