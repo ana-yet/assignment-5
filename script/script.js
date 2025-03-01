@@ -16,3 +16,8 @@ document
     body.style.backgroundColor = color[colorIndex];
     document;
   });
+const availableTask = document.getElementById("available-task");
+const cards = document.querySelectorAll(".card").length;
+availableTask.innerText = cards;
+
+const completedTask = 
