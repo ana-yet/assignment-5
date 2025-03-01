@@ -23,6 +23,7 @@ document
   .getElementById("theme-btn")
   .addEventListener("click", function (event) {
     colorIndex = (colorIndex + 1) % color.length;
+    console.log(colorIndex);
     body.style.backgroundColor = color[colorIndex];
     document;
   });
