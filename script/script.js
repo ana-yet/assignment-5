@@ -1,7 +1,7 @@
 // function for history
 function historyAdd(title, time) {
   const historyContainer = document.getElementById("history-content");
-  historyContainer.innerHTML += `<div class="p-4 bg-[#F4F7FF] rounded-3xl">
+  historyContainer.innerHTML += `<div class="p-4 my-2 bg-[#F4F7FF] rounded-3xl">
               <p class="font-medium">
                 You have completed the task ${title} at ${time}
               </p>
