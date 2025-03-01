@@ -11,19 +11,43 @@ function historyAdd(title, time) {
 const body = document.body;
 const color = [
   "#F4F7FF",
+  "#FF5733",
   "#33FF57",
   "#3357FF",
-  "#F3FF33",
   "#FF33A8",
   "#A833FF",
+  "#33FFF5",
+  "#FF8C33",
+  "#8C33FF",
+  "#33FFA8",
+  "#FFA833",
+  "#5733FF",
+  "#FF3357",
+  "#33A8FF",
+  "#A8FF33",
+  "#F533FF",
+  "#33FF8C",
+  "#8CFF33",
+  "#FFCC33",
+  "#3366FF",
+  "#FF3366",
+  "#66FF33",
+  "#33FFCC",
+  "#CC33FF",
+  "#FF6633",
+  "#3366CC",
+  "#CCFF33",
+  "#6633FF",
+  "#33CCFF",
+  "#FF33CC",
+  "#33FF66",
 ];
 let colorIndex = 0;
 body.style.backgroundColor = color[colorIndex];
 document
   .getElementById("theme-btn")
   .addEventListener("click", function (event) {
-    colorIndex = (colorIndex + 1) % color.length;
-    console.log(colorIndex);
+    colorIndex = Math.floor(Math.random() * color.length) + 1;
     body.style.backgroundColor = color[colorIndex];
     document;
   });
