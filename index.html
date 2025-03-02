@@ -26,26 +26,45 @@
   </head>
   <body class="pt-6 primary-font">
     <header
-      class="w-9/12 mx-auto bg-white rounded-2xl mb-6 border-gray-100 shadow-md"
+      class="lg:w-9/12 w-11/12 mx-auto bg-white rounded-2xl mb-6 border-gray-100 shadow-md"
     >
-      <nav class="flex justify-between p-6">
+      <nav class="flex justify-between p-2 md:p-3 lg:p-4">
         <!-- logo and name -->
-        <div class="flex items-center gap-2">
-          <img class="w-14 h-14" src="./assets/logo.png" alt="logo" />
-          <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+        <div class="flex items-center gap-1 md:gap-2">
+          <img
+            class="md:w-14 w-8 h-8 md:h-14"
+            src="./assets/logo.png"
+            alt="logo"
+          />
+          <h1 class="lg:text-3xl md:text-2xl text-xl">
+            Dev<span class="font-bold">Board</span>
+          </h1>
         </div>
         <!-- count and color -->
-        <div class="flex gap-9 items-center">
+        <div class="flex md:gap-9 gap-5 items-center">
           <!-- count  -->
           <div
-            class="flex bg-[#F4F7FF] px-4 py-3 rounded-full gap-2 items-center"
+            class="flex bg-[#F4F7FF] lg:px-4 md:px-3 px-2 py-1 md:py-2 lg:py-3 rounded-full gap-1 md:gap-2 items-center"
           >
-            <img class="w-8 h-8" src="./assets/checkbox.png" alt="" />
-            <h3 id="Completed-task" class="text-3xl font-bold">23</h3>
+            <img
+              class="md:w-8 md:h-8 w-5 h-5"
+              src="./assets/checkbox.png"
+              alt=""
+            />
+            <h3
+              id="Completed-task"
+              class="lg:text-3xl md:text-2xl text-xl font-bold"
+            >
+              23
+            </h3>
           </div>
           <!-- bg color dib -->
-          <button id="theme-btn" class="p-3 rounded-full bg-[#F4F7FF]">
-            <img src="./assets/theme-btn.png" alt="" />
+          <button id="theme-btn" class="md:p-3 p-2 rounded-full bg-[#F4F7FF]">
+            <img
+              class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
+              src="./assets/theme-btn.png"
+              alt=""
+            />
           </button>
         </div>
       </nav>
@@ -53,241 +72,346 @@
     <!-- main section -->
     <main>
       <!-- working section -->
-      <section class="w-9/12 mx-auto grid grid-cols-4">
+      <section
+        class="lg:w-9/12 w-11/12 mx-auto md:grid md:grid-cols-4 flex flex-col gap-4 md:gap-1"
+      >
         <!-- main container -->
-        <div class="col-span-3 bg-white p-6 rounded-2xl">
+        <div class="col-span-3 bg-white md:p-6 p-2 rounded-2xl">
           <!-- header content -->
-          <div class="flex gap-4 mb-16">
+          <div
+            class="grid grid-cols-2 lg:grid-cols-4 md:gap-4 gap-3 md:mb-8 mb-3"
+          >
             <!-- task card 1 -->
-            <div class="bg-[#F4F7FF] flex items-center p-8 gap-8 rounded-xl">
+            <div
+              class="bg-[#F4F7FF] flex items-center lg:p-5 md:p-4 p-3 lg:gap-5 md:gap-3 gap-2 rounded-xl shadow-md border-gray-100"
+            >
               <!-- image -->
               <div class="p-3 rounded-full bg-white">
-                <img class="w-6 h-6" src="./assets/checkbox.png" alt="" />
+                <img
+                  class="lg:w-7 lg:h-7 md:w-6 md:h-6 w-5 h-5"
+                  src="./assets/checkbox.png"
+                  alt=""
+                />
               </div>
               <!-- text -->
               <div>
-                <h3 class="text-[#00303C] font-medium">Task Assigned </h3>
-                <h2 id="available-task" class="text-4xl font-bold">06</h2>
+                <h3
+                  class="text-[#00303C] font-medium lg:text-base md:text-sm text-xs"
+                >
+                  Task Assigned 
+                </h3>
+                <h2
+                  id="available-task"
+                  class="lg:text-3xl md:text-2xl text-xl font-bold"
+                >
+                  06
+                </h2>
               </div>
             </div>
             <!-- task card middle -->
             <div
               id="Blogs"
-              class="bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex items-center py-8 px-9 gap-3 rounded-xl flex-1"
+              class="bg-gradient-to-br md:col-span-2 from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex items-center lg:py-5 lg:px-6 md:py-4 py-3 px-4 md:px-5 md:gap-4 gap-2 rounded-xl flex-1 shadow-md border-gray-100 row-end-1 lg:row-end-auto col-span-2"
             >
               <!-- image -->
               <div class="">
-                <img class="" src="./assets/board.png" alt="" />
+                <img
+                  class="lg:w-13 lg:h-13 w-11 h-11"
+                  src="./assets/board.png"
+                  alt=""
+                />
               </div>
               <!-- text -->
               <div class="text-center">
-                <h3 class="font-medium text-2xl text-white">
+                <h3 class="font-medium lg:text-2xl text-xl text-white">
                   Discover Something <br />
                   New Today!
                 </h3>
               </div>
             </div>
             <!-- task card 3 -->
-            <div class="bg-[#F4F7FF] flex items-center p-8 gap-3 rounded-xl">
+            <div
+              class="bg-[#F4F7FF] flex items-center lg:p-7 md:p-5 p-3 lg:gap-3 md:gap-2 gap-1 rounded-xl shadow-md border-gray-100"
+            >
               <!-- image -->
-              <div class="p-3 rounded-full bg-white">
-                <img class="w-6 h-6" src="./assets/calender.png" alt="" />
+              <div class="md:p-3 p-2 rounded-full bg-white">
+                <img
+                  class="md:w-6 w-5 md:h-6 h-5"
+                  src="./assets/calender.png"
+                  alt=""
+                />
               </div>
               <!-- text -->
               <div class="text-center">
-                <h2 id="current-date" class="text-lg font-bold"></h2>
+                <h2
+                  id="current-date"
+                  class="md:text-lg text-base font-bold"
+                ></h2>
               </div>
             </div>
           </div>
+          <hr class="border-dashed border-gray-300" />
           <!-- content container -->
-          <div class="grid grid-cols-3 gap-5">
+          <div
+            class="grid lg:grid-cols-3 grid-cols-2 md:gap-5 gap-3 md:pt-8 pt-3"
+          >
             <!-- card 1 -->
-            <div class="bg-[#F4F7FF] p-6 rounded-xl card">
+            <div
+              class="bg-[#F4F7FF] md:p-3 p-2 lg:p-5 rounded-xl shadow-md border-gray-200 card"
+            >
               <!-- text content -->
-              <div class="mb-8">
+              <div class="lg:mb-6 md:mb-4 mb-2">
                 <h4
-                  class="px-4 py-2 bg-white rounded-md inline-block mb-4 text-gray-500"
+                  class="lg:px-3 md:px-2 px-1 md:py-2 py-1 bg-white rounded-md inline-block md:mb-3 mb-2 text-gray-500 lg:text-base md:text-sm text-xs"
                 >
                   ShopEase
                 </h4>
-                <h2 class="text-2xl font-medium mb-4 card-title">
+                <h2
+                  class="lg:text-xl md:text-lg text-base font-medium lg:mb-3 md:mb-3 mb-2 card-title"
+                >
                   Fix Mobile Button Issue
                 </h2>
-                <p class="p-5 bg-white rounded-md text-gray-500">
-                  Debug using Chrome DevTools, check for overlapping elements,
-                  and ensure onClick works properly and ensure onClick works
-                  properly
-                </p>
+                <div class="lg:p-4 md:p-3 p-2 bg-white rounded-md">
+                  <p
+                    class="text-gray-500 md:line-clamp-3 line-clamp-2 md:text-sm text-xs"
+                  >
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                </div>
               </div>
               <!-- button content -->
               <div class="flex items-center justify-between">
                 <!-- text content -->
                 <div>
-                  <p class="text-gray-500">Deadline</p>
-                  <h4 class="text-xl font-medium">21 March 2025</h4>
+                  <p class="text-gray-500 md:text-sm text-xs">Deadline</p>
+                  <h4 class="md:text-base text-xs font-medium">
+                    21 March 2025
+                  </h4>
                 </div>
                 <button
                   id="btn-1"
-                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium complete-btn"
+                  class="md:py-2 md:px-3 px-2 py-1 rounded-lg md:text-base text-sm bg-blue-600 text-white font-medium complete-btn"
                 >
                   Completed
                 </button>
               </div>
             </div>
             <!-- card 2 -->
-            <div class="bg-[#F4F7FF] p-6 rounded-xl flex flex-col card">
+            <div
+              class="bg-[#F4F7FF] md:p-3 p-2 lg:p-5 rounded-xl shadow-md border-gray-200 card"
+            >
               <!-- text content -->
-              <div class="mb-8 flex-1">
+              <div class="lg:mb-6 md:mb-4 mb-2">
                 <h4
-                  class="px-4 py-2 bg-white rounded-md inline-block mb-4 text-gray-500"
+                  class="lg:px-3 md:px-2 px-1 md:py-2 py-1 bg-white rounded-md inline-block md:mb-3 mb-2 text-gray-500 lg:text-base md:text-sm text-xs"
                 >
                   CloudSync
                 </h4>
-                <h2 class="text-2xl font-medium mb-4 card-title">
+                <h2
+                  class="lg:text-xl md:text-lg text-base font-medium lg:mb-3 md:mb-3 mb-2 card-title"
+                >
                   Add Dark Mode
                 </h2>
-                <p class="p-5 bg-white rounded-md text-gray-500">
-                  Store the user's preference in localStorage, update CSS
-                  variables dynamically, and apply a smooth transition effect.
-                </p>
+                <div class="lg:p-4 md:p-3 p-2 bg-white rounded-md">
+                  <p
+                    class="text-gray-500 md:line-clamp-3 line-clamp-2 md:text-sm text-xs"
+                  >
+                    Store the user's preference in localStorage, update CSS
+                    variables dynamically, and apply a smooth transition effect.
+                  </p>
+                </div>
               </div>
               <!-- button content -->
               <div class="flex items-center justify-between">
                 <!-- text content -->
                 <div>
-                  <p class="text-gray-500">Deadline</p>
-                  <h4 class="text-xl font-medium">22 March 2025</h4>
+                  <p class="text-gray-500 md:text-sm text-xs">Deadline</p>
+                  <h4 class="md:text-base text-xs font-medium">
+                    22 March 2025
+                  </h4>
                 </div>
                 <button
-                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium complete-btn"
+                  id="btn-1"
+                  class="md:py-2 md:px-3 px-2 py-1 rounded-lg md:text-base text-sm bg-blue-600 text-white font-medium complete-btn"
                 >
                   Completed
                 </button>
               </div>
             </div>
             <!-- card 3 -->
-            <div class="bg-[#F4F7FF] p-6 rounded-xl card">
+            <div
+              class="bg-[#F4F7FF] md:p-3 p-2 lg:p-5 rounded-xl shadow-md border-gray-200 card"
+            >
               <!-- text content -->
-              <div class="mb-10 flex-1">
+              <div class="lg:mb-6 md:mb-4 mb-2">
                 <h4
-                  class="px-4 py-2 bg-white rounded-md inline-block mb-4 text-gray-500"
+                  class="lg:px-3 md:px-2 px-1 md:py-2 py-1 bg-white rounded-md inline-block md:mb-3 mb-2 text-gray-500 lg:text-base md:text-sm text-xs"
                 >
                   SwiftPay
                 </h4>
-                <h2 class="text-2xl font-medium mb-4 card-title">
+                <h2
+                  class="lg:text-xl md:text-lg text-base font-medium lg:mb-3 md:mb-3 mb-2 card-title"
+                >
                   Optimize Home page 
                 </h2>
-                <p class="p-5 bg-white rounded-md text-gray-500">
-                  Debug using Chrome DevTools, check for overlapping elements,
-                  and ensure onClick works properly and ensure onClick works
-                  properly
-                </p>
+                <div class="lg:p-4 md:p-3 p-2 bg-white rounded-md">
+                  <p
+                    class="text-gray-500 md:line-clamp-3 line-clamp-2 md:text-sm text-xs"
+                  >
+                    To optimize a home page, you should consider several key
+                    aspects that enhance the user experience, improve loading
+                    times, and ensure accessibility. Here's a comprehensive
+                    description of what an optimized home page entails:
+                  </p>
+                </div>
               </div>
               <!-- button content -->
               <div class="flex items-center justify-between">
                 <!-- text content -->
                 <div>
-                  <p class="text-gray-500">Deadline</p>
-                  <h4 class="text-xl font-medium">23 March 2025</h4>
+                  <p class="text-gray-500 md:text-sm text-xs">Deadline</p>
+                  <h4 class="md:text-base text-xs font-medium">
+                    23 March 2025
+                  </h4>
                 </div>
                 <button
-                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium complete-btn"
+                  id="btn-1"
+                  class="md:py-2 md:px-3 px-2 py-1 rounded-lg md:text-base text-sm bg-blue-600 text-white font-medium complete-btn"
                 >
                   Completed
                 </button>
               </div>
             </div>
             <!-- card 4 -->
-            <div class="bg-[#F4F7FF] p-6 rounded-xl card">
+            <div
+              class="bg-[#F4F7FF] md:p-3 p-2 lg:p-5 rounded-xl shadow-md border-gray-200 card"
+            >
               <!-- text content -->
-              <div class="mb-8">
+              <div class="lg:mb-6 md:mb-4 mb-2">
                 <h4
-                  class="px-4 py-2 bg-white rounded-md inline-block mb-4 text-gray-500"
+                  class="lg:px-3 md:px-2 px-1 md:py-2 py-1 bg-white rounded-md inline-block md:mb-3 mb-2 text-gray-500 lg:text-base md:text-sm text-xs"
                 >
                   Meta
                 </h4>
-                <h2 class="text-2xl font-medium mb-4 card-title">
+                <h2
+                  class="lg:text-xl md:text-lg text-base font-medium lg:mb-3 md:mb-3 mb-2 card-title"
+                >
                   Add new emoji 🤲
                 </h2>
-                <p class="p-5 bg-white rounded-md text-gray-500">
-                  Debug using Chrome DevTools, check for overlapping elements,
-                  and ensure onClick works properly and ensure onClick works
-                  properly
-                </p>
+                <div class="lg:p-4 md:p-3 p-2 bg-white rounded-md">
+                  <p
+                    class="text-gray-500 md:line-clamp-3 line-clamp-2 md:text-sm text-xs"
+                  >
+                    The title "Add New Emoji 🤲" signifies the process of
+                    incorporating new symbols into our communication toolbox.
+                    Here’s what this entails:
+                  </p>
+                </div>
               </div>
               <!-- button content -->
               <div class="flex items-center justify-between">
                 <!-- text content -->
                 <div>
-                  <p class="text-gray-500">Deadline</p>
-                  <h4 class="text-xl font-medium">24 March 2025</h4>
+                  <p class="text-gray-500 md:text-sm text-xs">Deadline</p>
+                  <h4 class="md:text-base text-xs font-medium">
+                    25 March 2025
+                  </h4>
                 </div>
                 <button
-                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium complete-btn"
+                  id="btn-1"
+                  class="md:py-2 md:px-3 px-2 py-1 rounded-lg md:text-base text-sm bg-blue-600 text-white font-medium complete-btn"
                 >
                   Completed
                 </button>
               </div>
             </div>
             <!-- card 5 -->
-            <div class="bg-[#F4F7FF] p-6 rounded-xl card">
+            <div
+              class="bg-[#F4F7FF] md:p-3 p-2 lg:p-5 rounded-xl shadow-md border-gray-200 card"
+            >
               <!-- text content -->
-              <div class="mb-8">
+              <div class="lg:mb-6 md:mb-4 mb-2">
                 <h4
-                  class="px-4 py-2 bg-white rounded-md inline-block mb-4 text-gray-500"
+                  class="lg:px-3 md:px-2 px-1 md:py-2 py-1 bg-white rounded-md inline-block md:mb-3 mb-2 text-gray-500 lg:text-base md:text-sm text-xs"
                 >
                   Google LLC
                 </h4>
-                <h2 class="text-2xl font-medium mb-4 card-title">
+                <h2
+                  class="lg:text-xl md:text-lg text-base font-medium lg:mb-3 md:mb-3 mb-2 card-title"
+                >
                   Integrate OpenAI API
                 </h2>
-                <p class="p-5 bg-white rounded-md text-gray-500">
-                  Debug using Chrome DevTools, check for overlapping elements,
-                  and ensure onClick works properly and ensure onClick works
-                  properly
-                </p>
+                <div class="lg:p-4 md:p-3 p-2 bg-white rounded-md">
+                  <p
+                    class="text-gray-500 md:line-clamp-3 line-clamp-2 md:text-sm text-xs"
+                  >
+                    Unlock the power of artificial intelligence in your
+                    applications with our OpenAI API Integration service. We
+                    seamlessly connect your website, app, or system with
+                    OpenAI’s advanced AI models (like GPT-3.5 and GPT-4) to
+                    deliver smart, dynamic, and human-like interactions.
+                  </p>
+                </div>
               </div>
               <!-- button content -->
               <div class="flex items-center justify-between">
                 <!-- text content -->
                 <div>
-                  <p class="text-gray-500">Deadline</p>
-                  <h4 class="text-xl font-medium">25 March 2025</h4>
+                  <p class="text-gray-500 md:text-sm text-xs">Deadline</p>
+                  <h4 class="md:text-base text-xs font-medium">
+                    27 March 2025
+                  </h4>
                 </div>
                 <button
-                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium complete-btn"
+                  id="btn-1"
+                  class="md:py-2 md:px-3 px-2 py-1 rounded-lg md:text-base text-sm bg-blue-600 text-white font-medium complete-btn"
                 >
                   Completed
                 </button>
               </div>
             </div>
             <!-- card 6 -->
-            <div class="bg-[#F4F7FF] p-6 rounded-xl card">
+            <div
+              class="bg-[#F4F7FF] md:p-3 p-2 lg:p-5 rounded-xl shadow-md border-gray-200 card"
+            >
               <!-- text content -->
-              <div class="mb-8">
+              <div class="lg:mb-6 md:mb-4 mb-2">
                 <h4
-                  class="px-4 py-2 bg-white rounded-md inline-block mb-4 text-gray-500"
+                  class="lg:px-3 md:px-2 px-1 md:py-2 py-1 bg-white rounded-md inline-block md:mb-3 mb-2 text-gray-500 lg:text-base md:text-sm text-xs"
                 >
                   Glassdoar
                 </h4>
-                <h2 class="text-2xl font-medium mb-4 card-title">
+                <h2
+                  class="lg:text-xl md:text-lg text-base font-medium lg:mb-3 md:mb-3 mb-2 card-title"
+                >
                   Improve Job searching
                 </h2>
-                <p class="p-5 bg-white rounded-md text-gray-500">
-                  Debug using Chrome DevTools, check for overlapping elements,
-                  and ensure onClick works properly and ensure onClick works
-                  properly
-                </p>
+                <div class="lg:p-4 md:p-3 p-2 bg-white rounded-md">
+                  <p
+                    class="text-gray-500 md:line-clamp-3 line-clamp-2 md:text-sm text-xs"
+                  >
+                    Struggling to find the right job? Our Job Searching
+                    Improvement service helps you take your job hunt to the next
+                    level with proven strategies and personalized support. We
+                    guide you through every step to increase your chances of
+                    landing interviews and securing your dream role.
+                  </p>
+                </div>
               </div>
               <!-- button content -->
               <div class="flex items-center justify-between">
                 <!-- text content -->
                 <div>
-                  <p class="text-gray-500">Deadline</p>
-                  <h4 class="text-xl font-medium">26 March 2025</h4>
+                  <p class="text-gray-500 md:text-sm text-xs">Deadline</p>
+                  <h4 class="md:text-base text-xs font-medium">
+                    28 March 2025
+                  </h4>
                 </div>
                 <button
-                  class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium complete-btn"
+                  id="btn-1"
+                  class="md:py-2 md:px-3 px-2 py-1 rounded-lg md:text-base text-sm bg-blue-600 text-white font-medium complete-btn"
                 >
                   Completed
                 </button>
@@ -296,26 +420,30 @@
           </div>
         </div>
         <!-- history container -->
-        <div class="bg-white ml-3 rounded-2xl">
+        <div class="bg-white lg:ml-3 rounded-2xl">
           <!-- history title -->
           <div class="flex flex-col items-center p-5">
             <!-- image and title -->
-            <div class="flex items-center gap-3">
-              <img src="./assets/activity.png" alt="activity" />
-              <h3 class="text-xl font-medium">Activity Log</h3>
+            <div class="flex items-center md:gap-3 gap-2">
+              <img
+                class="md:w-6 md:h-6 w-5 h-5"
+                src="./assets/activity.png"
+                alt="activity"
+              />
+              <h3 class="md:text-xl text-lg font-medium">Activity Log</h3>
             </div>
-            <div class="mt-4">
+            <div class="md:mt-4 mt-2">
               <button
                 id="history-clear-btn"
-                class="py-3 px-4 rounded-lg bg-blue-600 text-white font-medium"
+                class="md:py-2 lg:p-3 md:p-3 p-2 rounded-lg md:text-base text-sm bg-blue-600 text-white font-medium"
               >
                 Clear History
               </button>
             </div>
           </div>
-          <hr class="border-gray-200" />
+          <hr class="border-gray-300 border-dashed" />
           <!-- history -->
-          <div id="history-content" class="p-4"></div>
+          <div id="history-content" class="md:p-4 p-7"></div>
         </div>
       </section>
     </main>

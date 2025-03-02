@@ -1,8 +1,8 @@
 // function for history
 function historyAdd(title, time) {
   const historyContainer = document.getElementById("history-content");
-  historyContainer.innerHTML += `<div class="p-4 my-2 bg-[#F4F7FF] rounded-3xl">
-              <p class="font-medium">
+  historyContainer.innerHTML += `<div class="p-4 my-2 shadow-md border-gray-200 bg-[#F4F7FF] lg:rounded-2xl md:rounded-lg rounded-md">
+              <p class="font-medium lg:text-base md:text-xs text-sm">
                 You have completed the task ${title} at ${time}
               </p>
             </div>`;
@@ -64,8 +64,6 @@ for (let i = 0; i < cards.length; i++) {
   button.addEventListener("click", function (event) {
     const cardTitle = cards[i].querySelector(".card-title").innerText;
     historyAdd(cardTitle, todayTime);
-    // console.log(cardTitle);
-    // console.log(todayTime);
     alert("board Updated successfully");
     event.target.disabled = true;
     button.classList.remove("bg-blue-600");

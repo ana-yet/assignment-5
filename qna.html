@@ -24,22 +24,28 @@
       }
     </style>
   </head>
-  <body class="primary-font">
+  <body class="primary-font bg-[#F4F7FF] md:pt-4 pt-3">
     <header
-      class="w-9/12 mx-auto bg-white rounded-2xl mb-6 border-gray-100 shadow-md mt-4"
+      class="lg:w-9/12 w-11/12 mx-auto bg-white rounded-2xl md:mb-6 mb-4 border-gray-100 shadow-md"
     >
-      <nav class="flex justify-between p-6">
+      <nav class="flex justify-between md:p-6 p-4">
         <!-- logo and name -->
-        <div class="flex items-center gap-2">
-          <img class="w-14 h-14" src="./assets/logo.png" alt="logo" />
-          <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+        <div class="flex items-center md:gap-2 gap-1">
+          <img
+            class="lg:w-12 md:w-10 w-8 lg:h-12 md:h-10 h-8"
+            src="./assets/logo.png"
+            alt="logo"
+          />
+          <h1 class="lg:text-3xl md:text-2xl text-xl">
+            Dev<span class="font-bold">Board</span>
+          </h1>
         </div>
         <!-- count and color -->
-        <div class="flex gap-9 items-center">
+        <div class="flex md:gap-9 gap-6 items-center">
           <!-- bg color dib -->
           <button
             id="qn-btn"
-            class="py-3 px-4 rounded-lg bg-purple-600 text-white font-medium"
+            class="lg:py-3 lg:px-4 py-2 px-3 md:text-base text-sm rounded-lg bg-purple-600 text-white font-medium"
           >
             Back to Desk
           </button>
@@ -49,26 +55,28 @@
     <!-- main -->
     <main>
       <!-- section -->
-      <section class="w-9/12 mx-auto">
-        <h1 class="font-bold text-3xl text-center">Blogs</h1>
+      <section class="lg:w-9/12 w-11/12 mx-auto">
+        <h1 class="font-bold lg:text-3xl text-2xl text-center">Blogs</h1>
         <!-- qn1 -->
-        <div class="bg-white shadow-sm rounded-md my-4">
-          <p class="font-bold text-xl p-4">
+        <div class="bg-white shadow-sm rounded-md md:my-4 my-3">
+          <p class="font-bold lg:text-xl md:text-lg text-base p-4">
             Question-1: What are the different ways to select an element in the
             DOM?
           </p>
-          <p class="font-medium p-4">
+          <hr class="border-dashed border-gray-300" />
+          <p class="font-medium p-4 lg:text-base text-sm text-gray-700">
             We can select element multiple ways, like query selector,tag
             selector,class selector & id selector
           </p>
         </div>
         <!-- qn2-->
         <div class="bg-white shadow-sm rounded-md mb-4">
-          <p class="font-bold text-xl p-4">
+          <p class="font-bold lg:text-xl md:text-lg text-base p-4">
             Question-2: What is the difference between innerHTML, innerText, and
             textContent ?
           </p>
-          <p class="font-medium p-4">
+          <hr class="border-dashed border-gray-300" />
+          <p class="font-medium p-4 lg:text-base text-sm text-gray-700">
             In my eyes, innerText give us only the value of element and
             textContent give us the original value of the element if there is a
             hidden text . on the other hand innerHTML give html code access the
@@ -78,10 +86,11 @@
         </div>
         <!-- qn3 -->
         <div class="bg-white shadow-sm rounded-md mb-4">
-          <p class="font-bold text-xl p-4">
+          <p class="font-bold lg:text-xl md:text-lg text-base p-4">
             Question-3: What is event delegation in the DOM?
           </p>
-          <p class="font-medium p-4">
+          <hr class="border-dashed border-gray-300" />
+          <p class="font-medium p-4 lg:text-base text-sm text-gray-700">
             event delegation is a patten where we don't need to extra
             eventListener for the element child element cause it's work like
             bubbling.
@@ -89,10 +98,11 @@
         </div>
         <!-- qn4 -->
         <div class="bg-white shadow-sm rounded-md mb-4">
-          <p class="font-bold text-xl p-4">
+          <p class="font-bold lg:text-xl md:text-lg text-base p-4">
             Question-4: What is event bubbling in the DOM?
           </p>
-          <p class="font-medium p-4">
+          <hr class="border-dashed border-gray-300" />
+          <p class="font-medium p-4 lg:text-base text-sm text-gray-700">
             Event bubbling is when an event starts on a specific element, like a
             button, and then works its way up through all its parent elements,
             eventually reaching the top of the DOM . It’s super handy for event
@@ -102,11 +112,12 @@
         </div>
         <!-- qn5 -->
         <div class="bg-white shadow-sm rounded-md mb-4">
-          <p class="font-bold text-xl p-4">
+          <p class="font-bold lg:text-xl md:text-lg text-base p-4">
             Question-5: How do you create, add, and remove elements using
             JavaScript?
           </p>
-          <p class="font-medium p-4">
+          <hr class="border-dashed border-gray-300" />
+          <p class="font-medium p-4 lg:text-base text-sm text-gray-700">
             first of all i will make a variable then variableName =
             document.createElement('tag name'). after creating i will append
             this element in a parent element . if i want to remove
